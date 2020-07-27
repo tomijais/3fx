@@ -566,6 +566,11 @@ body.mobile-nav-active #mobile-nav-toggle i {
   text-transform: capitalize;
 }
 
+
+div.colab  h2{
+  margin: 0;
+}
+
 .section-title .separator {
   margin: 0;
 }

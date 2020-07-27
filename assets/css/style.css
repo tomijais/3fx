@@ -688,35 +688,15 @@ section {
   background: #07e0bb70;;
 }
 
-#contact .info {
-  color: #222;
-}
-
-#contact .info i {
-  font-size: 32px;
-  color: #021f42;
-  float: left;
-}
-
-#contact .info p {
-  padding: 0 0 10px 50px;
-  margin-bottom: 20px;
-  line-height: 22px;
-  font-size: 14px;
-}
-
-#contact .info .email p {
-  padding-top: 5px;
-}
 
 #contact .social-links {
   padding-bottom: 20px;
 }
 
-#contact .social-links a {
+.social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #021f42;
+  background: #07e0bb70;
   color: #fff;
   line-height: 1;
   padding: 6px 0 8px 0;
@@ -725,6 +705,7 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
+  margin: 5px 0;
 }
 
 #contact .social-links a:hover {
@@ -831,6 +812,10 @@ section {
   }
 }
 
+div.form.contacto{
+  justify-content: center;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -838,6 +823,46 @@ section {
   background: #021f42;
   padding-top: 20px;
 }
+
+div.row.footer-logo{
+  justify-content: space-between;
+}
+
+div.info{
+  display: inline-block;
+  color: white;
+  padding: 0;
+
+}
+
+div.cuadradosInfo{
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.phone{
+  border: 2px solid white;
+  padding: 10px;
+  background-color: #021f42bb;
+  margin-bottom: 5px;
+}
+
+div.phone p {
+  margin: 0;
+  color: white;
+}
+
+div.email{
+  border: 2px solid white;
+  padding: 10px;
+  background-color: #021f42bb;
+}
+
+div.email p {
+  margin: 0;
+  color: white;
+}
+
 
 .footer .footer-logo .navbar-brand {
   color: #fff;

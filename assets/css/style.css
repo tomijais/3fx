@@ -2,6 +2,8 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -176,7 +178,7 @@ span {
 #header #logo img {
   padding: 0;
   margin: 0;
-  width: 25%;
+  width: 30%;
 }
 
 #header.header-scrolled {
@@ -218,7 +220,7 @@ span {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 53px;
   font-weight: 700;
   line-height: 56px;
   /* font-family: "Philosopher", sans-serif; */
@@ -233,16 +235,16 @@ span {
 }
 
 #hero h2 {
-  color: #777;
+  color: white;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 28px;
   /* font-family: "Roboto", sans-serif; */
   font-weight: 300;
 }
 
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
     margin-bottom: 30px;
   }
@@ -256,7 +258,7 @@ span {
 #hero .btn-get-started {
   /* font-family: "Roboto", sans-serif; */
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 13px;
   letter-spacing: 1px;
   display: inline-block;
@@ -264,7 +266,7 @@ span {
   border-radius: 50px;
   transition: 0.5s;
   margin-bottom: 30px;
-  border: 2px solid #021f42;
+  border: 4px solid #07e0bb;
   background: #fff;
   color: #021f42;
   text-decoration: none;
@@ -371,11 +373,12 @@ span {
 .nav-menu a {
   padding: 8px 8px;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   color: #555;
   /* font-family: "Roboto", sans-serif; */
   font-weight: 400;
-  font-size: 16px;
+  font-size: 22px;
   outline: none;
   letter-spacing: 0;
   transition: 0.3s;
@@ -534,7 +537,6 @@ body.mobile-nav-active #mobile-nav-toggle i {
 # Sections
 --------------------------------------------------------------*/
 .padd-section {
-  padding-bottom: 80px;
   padding-top: 80px;
 }
 
@@ -581,7 +583,8 @@ body.mobile-nav-active #mobile-nav-toggle i {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  padding: 15px 0;
+  padding: 35px 0;
+  padding-top: 72px;
   text-align: center;
 }
 
@@ -664,7 +667,7 @@ section {
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #fff;
+  background: #07e0bb70;;
 }
 
 #contact .info {
@@ -785,6 +788,7 @@ section {
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
+  margin-bottom: 15px;
 }
 
 #contact .php-email-form button[type="submit"]:hover {
@@ -813,8 +817,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #2a2c30;
-  padding-top: 50px;
+  background: #021f42;
+  padding-top: 20px;
 }
 
 .footer .footer-logo .navbar-brand {
@@ -851,7 +855,7 @@ section {
 
 .footer .copyrights {
   background: #fff;
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
   padding: 25px;
 }

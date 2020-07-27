@@ -205,6 +205,18 @@ span {
   }
 }
 
+@media (max-width: 800px) {
+  #hero {
+    width: 100%;
+    height: calc(100vh - 40px);
+    background: url(../img/media-quey-rectangulojpg.jpg) center center no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin-top: 40px;
+  }
+}
+
+
 #hero .hero-container {
   position: absolute;
   bottom: 0;
@@ -359,7 +371,8 @@ span {
 
 /* Nav Meu Container */
 #nav-menu-container {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
   margin: 0 0 0 0;
 }
 

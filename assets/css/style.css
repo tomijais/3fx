@@ -847,7 +847,7 @@ div.phone{
   margin-bottom: 5px;
 }
 
-div.phone p {
+div.phone a p {
   margin: 0;
   color: white;
 }
@@ -858,7 +858,7 @@ div.email{
   background-color: #021f42bb;
 }
 
-div.email p {
+div.email a p {
   margin: 0;
   color: white;
 }

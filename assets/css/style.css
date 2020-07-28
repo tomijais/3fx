@@ -18,13 +18,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  color: #000;
+  color: #021f42;
   font-weight: 600;
 }
 
 h4 {
   color: #000;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -78,6 +78,10 @@ span {
   margin-bottom: 30px;
   width: 60px;
 } 
+
+.container {
+  max-width: 1280;
+}
 
 .container-full {
   padding-left: 0;
@@ -205,7 +209,7 @@ span {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 12v80px) {
   #hero {
     width: 100%;
     height: calc(100vh - 40px);
@@ -241,7 +245,21 @@ span {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 45px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #hero h1 {
+    font-size: 65px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #hero h1 {
+    font-size: 75px;
     line-height: 36px;
   }
 }
@@ -439,7 +457,7 @@ span {
   right: 0;
   top: 0;
   z-index: 999;
-  margin: 4px 20px 0 0;
+  margin: 30px 60px 0 0;
   border: 0;
   background: none;
   font-size: 24px;
@@ -586,6 +604,7 @@ div.colab  h2{
 
 .section-title .separator {
   margin: 0;
+  font-size: 20px;
 }
 
 .separator {
@@ -602,12 +621,11 @@ div.colab  h2{
 --------------------------------------------------------------*/
 .clients {
   padding: 35px 0;
-  padding-top: 72px;
   text-align: center;
 }
 
 .clients img {
-  max-width: 45%;
+  max-width: 70%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;

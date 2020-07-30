@@ -96,57 +96,64 @@
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <div class="feature-block">
-                <img
-                  src="assets/img/svg/cloud.svg"
-                  alt="img"
-                  class="img-fluid"
-                />
-                <h4>Lorem, ipsum.</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry
-                </p>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h1>Lorem, ipsum.</h1>
+                    <p>Lorem, ipsum dolor.</p>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>John Doe</h1>
+                    <p>Architect & Engineer</p>
+                    <p>We love that guy</p>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div
               class="col-md-6 col-lg-3"
               data-aos="zoom-in"
-              data-aos-delay="200"
+              data-aos-delay="100"
             >
-              <div class="feature-block">
-                <img
-                  src="assets/img/svg/planet.svg"
-                  alt="img"
-                  class="img-fluid"
-                />
-                <h4>Lorem, ipsum.</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry
-                </p>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h1>Lorem, ipsum.</h1>
+                    <p>Lorem, ipsum dolor.</p>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>John Doe</h1>
+                    <p>Architect & Engineer</p>
+                    <p>We love that guy</p>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div
               class="col-md-6 col-lg-3"
               data-aos="zoom-in"
-              data-aos-delay="300"
+              data-aos-delay="100"
             >
-              <div class="feature-block">
-                <img
-                  src="assets/img/svg/asteroid.svg"
-                  alt="img"
-                  class="img-fluid"
-                />
-                <h4>Lorem, ipsum.</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry
-                </p>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h1>Lorem, ipsum.</h1>
+                    <p>Lorem, ipsum dolor.</p>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>John Doe</h1>
+                    <p>Architect & Engineer</p>
+                    <p>We love that guy</p>
+                  </div>
+                </div>
               </div>
             </div>
+            
             <div
               class="col-md-6 col-lg-3"
               data-aos="zoom-in"
@@ -221,7 +228,7 @@
       <section id="contact" class="padd-section">
         <div class="container" data-aos="fade-up">
           <div class="section-title text-center">
-            <h2>Contact</h2>
+            <h2>Contacto</h2>
             <p class="separator">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque
@@ -233,53 +240,56 @@
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div class="col-lg-5 col-md-8">
+            <div class="col-lg-7 col-md-8">
               <div class="">
                 <form action="enviar.php" method="post" class="php-email-form">
                   <div class="form-group">
+                    <label for="name">Nombre completo</label>
                     <input
                       type="text"
                       name="name"
                       class="form-control"
                       id="name"
-                      placeholder="Your Name"
                       data-rule="minlen:4"
                       data-msg="Please enter at least 4 chars"
                     />
                     <div class="validate"></div>
                   </div>
                   <div class="form-group">
+                    <label for="name">Email</label>
                     <input
                       type="email"
                       class="form-control"
                       name="email"
                       id="email"
-                      placeholder="Your Email"
+                      
                       data-rule="email"
                       data-msg="Please enter a valid email"
                     />
                     <div class="validate"></div>
                   </div>
                   <div class="form-group">
+                    <label for="name">Asunto</label>
                     <input
                       type="text"
                       class="form-control"
                       name="subject"
                       id="subject"
-                      placeholder="Subject"
+                      
                       data-rule="minlen:4"
                       data-msg="Please enter at least 8 chars of subject"
                     />
                     <div class="validate"></div>
                   </div>
                   <div class="form-group">
+                    <label for="name">Su mensaje</label>
                     <textarea
                       class="form-control"
                       name="message"
                       rows="5"
                       data-rule="required"
                       data-msg="Please write something for us"
-                      placeholder="Message"
+                      
                     ></textarea>
                     <div class="validate"></div>
                   </div>
@@ -322,7 +332,20 @@
     <footer class="footer">
       <div class="container">
         <div class="row footer-logo">
-          <div class="izquierda col-md-12 col-lg-8">
+          <div class="izquierda ">
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/3fx_distribuidora/"
+                class="instagram"
+                >
+                <span class="fa-stack fa-1x">
+                  <i class="fa fa-instagram fa-stack-1x "></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="derecha col-md-12 col-lg-8">
+
             <div class="texto">
               <a class="navbar-brand" href="#">3FX Distribuidora</a>
               <p>
@@ -331,20 +354,11 @@
                 text ever since the.
               </p>
             </div>
-          </div>
-          <div class="derecha">
-            <div class="social-links">
-              <a
-                href="https://www.facebook.com/3FX-Distribuidora-107469607657700"
-                class="facebook"
-                ><i class="fa fa-facebook"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/3fx_distribuidora/"
-                class="instagram"
-                ><i class="fa fa-instagram"></i
-              ></a>
-            </div>
+
+
+
+
+
           </div>
         </div>
       </div>

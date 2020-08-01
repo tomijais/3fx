@@ -919,6 +919,7 @@ div.social-links a.instagram i{
   border-radius: 50%;
   line-height: 1;
   padding: 5px;
+  font-size: 55px;
 }
 
 
@@ -948,6 +949,13 @@ div.email{
 div.email a p {
   margin: 0;
   color: white;
+}
+
+
+div.derecha {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 
@@ -1002,4 +1010,8 @@ div.email a p {
 .footer .copyrights p a, .footer .copyrights .credits a {
   letter-spacing: 0;
   color: #021f42;
+}
+
+.footer-logo{
+  display: flex;
 }

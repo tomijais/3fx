@@ -49,6 +49,7 @@ a {
 
 a:hover {
   color: #07e0bb;
+  text-decoration: none;
 }
 
 ul {
@@ -719,6 +720,13 @@ section {
   transform: rotateY(180deg);
 }
 
+@media (max-width: 991px) {
+  .flip-card {
+    margin-bottom: 30px;
+  }
+
+}
+
 /* Get Started Section
 --------------------------------*/
 #get-started {
@@ -851,7 +859,7 @@ section {
   transition: 0.4s;
   margin-bottom: 15px;
   margin-top: 10px;
-  font-size: 24;
+  font-size: 24px;
 }
 
 #contact .php-email-form button[type="submit"]:hover {
@@ -904,6 +912,10 @@ div.info {
   padding: 0;
 }
 
+div.info i {
+  margin-right: 10px;
+}
+
 div.social-links a.instagram i {
   color: #021f42;
   display: flex;
@@ -923,25 +935,44 @@ div.cuadradosInfo {
 }
 
 div.phone {
-  border: 2px solid white;
   padding: 10px;
-  background-color: #021f42bb;
+  background-color: #285e85;
   margin-bottom: 5px;
 }
 
-div.phone a p {
-  margin: 0;
+div.phone a.phone {
+  display: flex;
   color: white;
 }
 
-div.email {
-  border: 2px solid white;
-  padding: 10px;
-  background-color: #021f42bb;
+
+div.phone a.phone p {
+  margin: 0;
+  color: white;
+  font-size: 19px;
 }
 
-div.email a p {
+
+div.email {
+  padding: 10px;
+  background-color: #285e85;
+}
+
+div.email a.email {
+  display: flex;
+  color: white;
+
+}
+
+div.email a.email p {
   margin: 0;
+  color: white;
+  font-size: 19px;
+}
+
+
+div.llamanos h6, div.escribinos h6{
+  text-transform: uppercase;
   color: white;
 }
 

@@ -162,7 +162,7 @@ span {
   right: 0;
   z-index: 3;
   transition: all 0.5s ease;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 #header #logo {
@@ -192,7 +192,7 @@ span {
 #header #logo img {
   padding: 0;
   margin: 0;
-  width: 30%;
+  width: 22%;
 }
 
 #header.header-scrolled {
@@ -431,7 +431,7 @@ span {
   color: #555;
   /* font-family: "Roboto", sans-serif; */
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   outline: none;
   letter-spacing: 0;
   transition: 0.3s;
@@ -953,7 +953,6 @@ div.cuadradosInfo {
 div.phone {
   padding: 10px;
   background-color: #285e85;
-  margin-bottom: 5px;
 }
 
 div.phone a.phone {

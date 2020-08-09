@@ -10,6 +10,7 @@ body {
   background-color: #fff;
   color: #333;
   font-family: "Poppins", sans-serif;
+
 }
 
 h1,
@@ -666,6 +667,11 @@ section {
   background-color: #f6f9fe;
 }
 
+section.cuadradosInfo{
+  padding: 8px 0;
+  background-color: #285e85;
+}
+
 /*--------------------------------------------------------------
 # Flip card
 --------------------------------------------------------------*/
@@ -706,7 +712,6 @@ section {
   -webkit-box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
   box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
-
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -724,8 +729,19 @@ section {
   .flip-card {
     margin-bottom: 30px;
   }
-
 }
+
+
+.flip-card-front h1,
+.flip-card-back h1{
+  margin: 20px 0;
+}
+
+.flip-card-front p,
+.flip-card-back p{
+  margin: 20px 0;
+}
+
 
 /* Get Started Section
 --------------------------------*/
@@ -808,7 +824,6 @@ section {
   font-size: 13px;
 }
 
-
 #contact .php-email-form .loading {
   display: none;
   background: #fff;
@@ -843,8 +858,8 @@ section {
 }
 
 #contact .php-email-form input {
-  padding: 29px 15px;
-    border: none;
+  padding: 24px 15px;
+  border: none;
 }
 
 #contact .php-email-form textarea {
@@ -888,8 +903,7 @@ div.form.contacto {
   justify-content: center;
 }
 
-
-label{
+label {
   font-size: 20px;
   color: #021f42;
 }
@@ -945,13 +959,11 @@ div.phone a.phone {
   color: white;
 }
 
-
 div.phone a.phone p {
   margin: 0;
   color: white;
   font-size: 19px;
 }
-
 
 div.email {
   padding: 10px;
@@ -961,7 +973,6 @@ div.email {
 div.email a.email {
   display: flex;
   color: white;
-
 }
 
 div.email a.email p {
@@ -970,8 +981,8 @@ div.email a.email p {
   font-size: 19px;
 }
 
-
-div.llamanos h6, div.escribinos h6{
+div.llamanos h6,
+div.escribinos h6 {
   text-transform: uppercase;
   color: white;
 }
@@ -1024,9 +1035,7 @@ div.derecha {
 
 .footer .copyrights {
   background: #fff;
-  margin-top: 30px;
   text-align: center;
-  padding: 25px;
 }
 
 .footer .copyrights p,

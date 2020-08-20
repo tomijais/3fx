@@ -15,6 +15,8 @@ window.addEventListener("load", function () {
   let errorSubject = document.querySelector("div.validate-subject");
   let errorMessage = document.querySelector("div.validate-message");
 
+  let loadingRing = document.querySelector(".lds-ring");
+
   let errors = {
     name: "El campo no puede quedar vacio",
     mail: "El campo no puede quedar vacio",
@@ -83,6 +85,8 @@ window.addEventListener("load", function () {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
+
+
     if (Object.keys(errors).length) {
       Swal.fire({
         icon: "error",
@@ -90,14 +94,47 @@ window.addEventListener("load", function () {
         text: "Por favor revisa los campos e intentalo nuevamente",
       });
     } else {
-      Swal.fire(
-        "Muchas gracias!",
-        "La informacion se ha enviado satisfactoriamente!",
-        "success"
-      );
       setTimeout(function () {
-        form.submit();
-      }, 2000);
+
+        loadingRing.style.display = "flex"
+
+        emailjs.sendForm("default_service", "template_ATflrdWt", form).then(
+          function (response) {
+            console.log("SUCCESS!", response.status, response.text);
+
+            inputName.value = "";
+            inputEmail.value = "";
+            inputSubject.value = "";
+            inputMessage.value = "";
+
+            Swal.fire(
+              "Muchas gracias!",
+              "La informacion se ha enviado satisfactoriamente!",
+              "success"
+            );
+
+            loadingRing.style.display = "none"
+          },
+          function (error) {
+            console.log("FAILED...", error);
+
+            inputName.innerText = "";
+            inputEmail.innerText = "";
+            inputSubject.innerText = "";
+            inputMessage.innerText = "";
+
+            Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text:
+                "Ha ocurrido un error, por favor intentalo de nuevo mas tarde.",
+            });
+
+            loadingRing.style.display = "none"
+
+          }
+        );
+      }, 1000);
     }
   });
 
@@ -117,14 +154,6 @@ window.addEventListener("load", function () {
       }, 6000);
     }
   });
-
-
-
-
-
-
-
-
 });
 
 function openNav() {

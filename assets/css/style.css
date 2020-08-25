@@ -596,10 +596,14 @@ div.colab h2 {
 }
 
 .clients img {
-  max-width: 45%;
+  max-width: 50%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
+}
+
+.clients img:first-child {
+  max-width: 40%;
 }
 
 .clients img:hover {

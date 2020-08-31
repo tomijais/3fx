@@ -66,7 +66,6 @@ li {
   font-weight: 400;
   letter-spacing: 2px;
   line-height: 30px;
-  text-transform: capitalize;
 }
 
 p {
@@ -202,8 +201,7 @@ span {
 #home {
   width: 100%;
   height: calc(100vh - 40px);
-  background: url(../img/man-in-gray-shirt-cleaning-clear-glass-wall-near-sofa-7132972.jpg)
-    center center no-repeat;
+  background: url(../img/deposito-169.jpg) center center no-repeat;
   background-size: 100%;
   position: relative;
   margin-top: 40px;
@@ -240,7 +238,7 @@ span {
 #home .home-container {
   position: absolute;
   bottom: 0;
-  top: 0;
+  /* top: 0; */
   left: 0;
   right: 0;
   display: flex;
@@ -276,7 +274,7 @@ span {
 @media (min-width: 1400px) {
   #home h1 {
     font-size: 75px;
-    line-height: 36px;
+    line-height: 70px;
   }
 }
 
@@ -514,12 +512,11 @@ div.colab h2 {
 }
 
 .separator {
-  color: #626262;
+  color: #021f42;
   /* font-family: "Roboto", sans-serif; */
   font-size: 15px;
   font-weight: 300;
   margin-bottom: 30px;
-  text-transform: capitalize;
 }
 
 /*--------------------------------------------------------------
@@ -663,7 +660,6 @@ section.cuadradosInfo {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  /* background-color: red; */
   -webkit-box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
   box-shadow: 7px 10px 6px 0px rgba(0, 0, 0, 0.55);
@@ -672,6 +668,7 @@ section.cuadradosInfo {
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   color: white;
+  transform: rotateY(0deg);
 }
 
 /* Style the back side */
@@ -925,7 +922,7 @@ section.cuadradosInfo {
   text-transform: none;
 }
 
-/* Get Started Section
+/* About us Section
 --------------------------------*/
 #get-started {
   display: inline-block;
@@ -969,6 +966,35 @@ section.cuadradosInfo {
 
 #get-started .feature-block a:hover {
   color: #021f42;
+}
+
+/* About us Text
+--------------------------------*/
+
+#get-started div.abo-us {
+  margin-top: 40px;
+}
+
+#get-started div.abo-us ul {
+  margin-bottom: 30px;
+}
+
+#get-started div.abo-us p,
+#get-started div.abo-us li {
+  color: #021f42;
+}
+#get-started div.abo-us .izquierda p {
+  text-align: left;
+  font-size: 15px;
+}
+#get-started div.abo-us .derecha li {
+  text-align: right;
+  font-size: 15px;
+  list-style-type: none;
+}
+
+#get-started div.abo-us .derecha a {
+  color: #4a81c3;
 }
 
 /* Contact Section

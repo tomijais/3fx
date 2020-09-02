@@ -816,11 +816,6 @@ section.cuadradosInfo {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .flip-card-front img {
-  }
-
-  .flip-card-front h3 {
-  }
   .flip-card-back ul.bg-ul-1 {
     margin: 30px 0;
   }
@@ -858,11 +853,6 @@ section.cuadradosInfo {
     font-size: 15px;
   }
 
-  .flip-card-back ul {
-  }
-
-  .flip-card-back ul li {
-  }
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {

@@ -142,18 +142,7 @@ window.addEventListener("load", function () {
 
   document.querySelector("a.closebtn").onclick = closeNav;
 
-  document.addEventListener("click", function (event) {
-    let isClickInside = document
-      .getElementById("mySidebar")
-      .contains(event.target);
-    if (document.getElementById("mySidebar").style.width == "250px") {
-      setTimeout(function () {
-        if (!isClickInside) {
-          closeNav();
-        }
-      }, 6000);
-    }
-  });
+
 });
 
 function openNav() {

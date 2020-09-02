@@ -280,7 +280,7 @@ span {
 
 #home h2 {
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
   font-size: 28px;
   /* font-family: "Roboto", sans-serif; */
   font-weight: 300;
@@ -404,9 +404,10 @@ span {
 
 /* Nav Meu Container */
 #nav-menu-container {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0 0 0 0;
+  position: fixed;
+  z-index: 4;
+  top: 15px;
+  right: 15px;
 }
 @media (min-width: 768px) {
   #nav-menu-container button {
@@ -1064,11 +1065,10 @@ display: none;
 }
 
 
-@media (max-width: 991px) {
-  #get-started div.abo-us p.help{
-    display: block;
-    }
-}
+
+
+
+
 
 
 /* Contact Section

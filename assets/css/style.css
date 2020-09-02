@@ -217,7 +217,7 @@ span {
   #home {
     width: 100%;
     height: calc(100vh - 40px);
-    background: url(../img/media-quey-rectangulo.jpg) center center no-repeat;
+    background: url(../img/deposito3.jpg) center center no-repeat;
     background-size: 100%;
     position: relative;
     margin-top: 40px;
@@ -228,7 +228,7 @@ span {
   #home {
     width: 100%;
     height: calc(100vh - 40px);
-    background: url(../img/media-quey-rectangulo2.jpg) center center no-repeat;
+    background: url(../img/deposito4.jpg) center center no-repeat;
     background-size: 100%;
     position: relative;
     margin-top: 40px;
@@ -249,7 +249,7 @@ span {
 }
 
 #home h1 {
-  margin: 0 0 10px 0;
+  margin: 0 0 17px 0;
   font-size: 53px;
   font-weight: 700;
   line-height: 56px;
@@ -689,7 +689,70 @@ section.cuadradosInfo {
   margin-left: 10px;
   margin-bottom: 10px;
 }
-@media (min-width: 575px) and (max-width: 767px) {
+
+@media (max-width: 575px) {
+  .flip-card-front img {
+    width: 25%;
+  }
+
+  .flip-card-front h3 {
+    margin: 20px 0;
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+  .flip-card-back ul.bg-ul-1 {
+    margin: 18px 0;
+  }
+  .flip-card-back ul.bg-ul-1 li {
+    line-height: 51px;
+    letter-spacing: 0;
+    font-size: 16px;
+  }
+  .flip-card-back ul.bg-ul-1 li br {
+    display: none;
+  }
+
+  .flip-card-back ul.bg-ul-2 {
+    margin: 30px 0;
+  }
+  .flip-card-back ul.bg-ul-2 li {
+    line-height: 46px;
+    letter-spacing: -0.5px;
+    font-size: 16px;
+  }
+
+  .flip-card-back ul.bg-ul-3 {
+    margin: 18px 0;
+  }
+
+  .flip-card-back ul.bg-ul-3 li {
+    line-height: 51px;
+    letter-spacing: 0;
+    font-size: 16px;
+  }
+  .flip-card-back ul.bg-ul-4 {
+    margin: 30px 0;
+  }
+
+  .flip-card-back ul.bg-ul-4 li {
+    line-height: 46px;
+    letter-spacing: 1;
+    font-size: 16px;
+  }
+
+  .flip-card-back ul {
+    margin: 5px 0;
+    padding-left: 30px;
+  }
+
+  .flip-card-back ul li {
+    line-height: 33px;
+    letter-spacing: 0;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
   .flip-card-front img {
     width: 30%;
   }
@@ -866,8 +929,7 @@ section.cuadradosInfo {
     font-size: 1.5rem;
   }
   .flip-card-back ul.bg-ul-1 {
-    margin: 19px 0;
-    padding: 0 28px;
+    margin: 47px 0;
   }
   .flip-card-back ul.bg-ul-1 li {
     line-height: 28px;
@@ -879,7 +941,6 @@ section.cuadradosInfo {
 
   .flip-card-back ul.bg-ul-2 {
     margin: 30px 0;
-    padding: 0 37px;
   }
   .flip-card-back ul.bg-ul-2 li {
     line-height: 46px;
@@ -887,16 +948,15 @@ section.cuadradosInfo {
   }
 
   .flip-card-back ul.bg-ul-3 {
-    margin: 25px 0;
+    margin: 33px 0;
   }
 
   .flip-card-back ul.bg-ul-3 li {
-    line-height: 30px;
-    letter-spacing: -0.5px;
+    line-height: 28px;
+    letter-spacing: -0.7px;
   }
   .flip-card-back ul.bg-ul-4 {
     margin: 30px 0;
-    padding: 0 37px;
   }
 
   .flip-card-back ul.bg-ul-4 li {
@@ -975,27 +1035,41 @@ section.cuadradosInfo {
   margin-top: 40px;
 }
 
-#get-started div.abo-us ul {
-  margin-bottom: 30px;
-}
+
 
 #get-started div.abo-us p,
 #get-started div.abo-us li {
   color: #021f42;
+  font-size: 15px;
 }
+#get-started div.abo-us ul{
+  padding: 0;
+
+}
+
 #get-started div.abo-us .izquierda p {
   text-align: left;
-  font-size: 15px;
 }
 #get-started div.abo-us .derecha li {
   text-align: right;
-  font-size: 15px;
   list-style-type: none;
 }
 
 #get-started div.abo-us .derecha a {
   color: #4a81c3;
 }
+
+#get-started div.abo-us .izquierda p.help{
+display: none;
+}
+
+
+@media (max-width: 991px) {
+  #get-started div.abo-us p.help{
+    display: block;
+    }
+}
+
 
 /* Contact Section
 --------------------------------*/

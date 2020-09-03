@@ -249,7 +249,7 @@ span {
 }
 
 #home h1 {
-  margin: 0 0 17px 0;
+  margin-bottom: 30px;
   font-size: 53px;
   font-weight: 700;
   line-height: 56px;
@@ -278,12 +278,14 @@ span {
   }
 }
 
+
+
 #home h2 {
-  color: white;
-  margin-bottom: 17px;
+  color: #2981c3;
+  margin-bottom: 30px;
   font-size: 28px;
   /* font-family: "Roboto", sans-serif; */
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -293,6 +295,23 @@ span {
     margin-bottom: 30px;
   }
 }
+
+
+@media (max-height:700px) {
+  #home h1 {
+    font-size: 45px;
+    line-height: 36px;
+    margin-bottom: 17px;
+  }
+
+  #home h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 17px;
+  }
+}
+
+
 
 #home img {
   max-width: 95%;
@@ -473,19 +492,6 @@ span {
   margin: 0;
 }
 
-
-.rotate {
-  animation: rotation 3s infinite linear;
-}
-
-@keyframes rotation {
-  from {
-    transform:  rotateY(0eg);
-  }
-  to {
-    transform:  rotateY(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections
@@ -691,6 +697,10 @@ section.cuadradosInfo {
   color: white;
   transform: rotateY(180deg);
 }
+.flip-card-front h3 {
+  color: #021f42
+}
+
 
 @media (max-width: 991px) {
   .flip-card {

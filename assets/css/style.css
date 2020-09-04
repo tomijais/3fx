@@ -123,7 +123,7 @@ span {
   font-size: 16px;
   border-radius: 2px;
   right: 15px;
-  bottom: 15px;
+  bottom: 20px;
   transition: background 0.5s;
 }
 
@@ -143,6 +143,52 @@ span {
   background: #07e0bb;
   color: #fff;
 }
+
+
+
+/* Whatsapp Button */
+.wpp {
+  position: fixed;
+  background: transparent;
+  line-height: 0;
+  color: #25d366;
+  padding: -1;
+  font-size: 70px;
+  border-radius: 2px;
+  left: 15px;
+  bottom: 20px;
+  transition: background 0.5s;
+}
+
+
+.wpp i{
+  line-height: 0.7em;
+  letter-spacing: 0;
+}
+@media (max-width: 768px) {
+  .wpp {
+    bottom: 15px;
+  }
+}
+
+.wpp:focus {
+  background: transparent;
+  color: #25d366;
+  outline: none;
+}
+
+.wpp:hover {
+  transform: scale(1.25);
+  color: #25d366;
+  background-color: #fff;
+}
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Header

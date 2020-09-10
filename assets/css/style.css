@@ -144,8 +144,6 @@ span {
   color: #fff;
 }
 
-
-
 /* Whatsapp Button */
 .wpp {
   position: fixed;
@@ -160,8 +158,7 @@ span {
   transition: background 0.5s;
 }
 
-
-.wpp i{
+.wpp i {
   line-height: 0.7em;
   letter-spacing: 0;
 }
@@ -182,13 +179,6 @@ span {
   color: #25d366;
   background-color: #fff;
 }
-
-
-
-
-
-
-
 
 /*--------------------------------------------------------------
 # Header
@@ -324,8 +314,6 @@ span {
   }
 }
 
-
-
 #home h2 {
   color: #2981c3;
   margin-bottom: 30px;
@@ -342,8 +330,7 @@ span {
   }
 }
 
-
-@media (max-height:700px) {
+@media (max-height: 700px) {
   #home h1 {
     font-size: 50px;
     line-height: 36px;
@@ -356,8 +343,6 @@ span {
     margin-bottom: 17px;
   }
 }
-
-
 
 #home img {
   max-width: 95%;
@@ -469,14 +454,28 @@ span {
 
 /* Nav Meu Container */
 #nav-menu-container {
-  position: fixed;
-  z-index: 4;
-  top: 15px;
-  right: 15px;
+    position: fixed;
+    z-index: 4;
+    top: 15px;
+    right: 15px;
+
+
 }
+@media (min-width: 768px) {
+  #nav-menu-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 0 0;
+    position: relative;
+  }
+}
+
+
+
 @media (min-width: 768px) {
   #nav-menu-container button {
     display: none;
+
   }
 }
 
@@ -537,7 +536,6 @@ span {
 .nav-menu ul ul {
   margin: 0;
 }
-
 
 /*--------------------------------------------------------------
 # Sections
@@ -744,9 +742,8 @@ section.cuadradosInfo {
   transform: rotateY(180deg);
 }
 .flip-card-front h3 {
-  color: #021f42
+  color: #021f42;
 }
-
 
 @media (max-width: 991px) {
   .flip-card {
@@ -984,7 +981,6 @@ section.cuadradosInfo {
     letter-spacing: 1px;
     font-size: 15px;
   }
-
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -1158,16 +1154,13 @@ section.cuadradosInfo {
   margin-top: 40px;
 }
 
-
-
 #get-started div.abo-us p,
 #get-started div.abo-us li {
   color: #021f42;
   font-size: 15px;
 }
-#get-started div.abo-us ul{
+#get-started div.abo-us ul {
   padding: 0;
-
 }
 
 #get-started div.abo-us .izquierda p {
@@ -1182,16 +1175,9 @@ section.cuadradosInfo {
   color: #4a81c3;
 }
 
-#get-started div.abo-us .izquierda p.help{
-display: none;
+#get-started div.abo-us .izquierda p.help {
+  display: none;
 }
-
-
-
-
-
-
-
 
 /* Contact Section
 --------------------------------*/
